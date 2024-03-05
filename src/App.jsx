@@ -1,11 +1,16 @@
+import AppLayout from "./ui/AppLayout";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./ui/Home";
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [{ path: "/", element: <Home /> }],
+  },
+]);
+
 function App() {
-  return (
-    <>
-      <h1 className="text-3xl text-yellow-500 font-semibold">
-        Hello wworls !!
-      </h1>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
