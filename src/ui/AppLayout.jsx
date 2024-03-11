@@ -7,7 +7,7 @@ function AppLayout() {
   return (
     <div className="divide-y-8 divide-red-300">
       <Header />
-      <div className=" bg-stone-500 ">
+      <div className=" bg-stone-400 ">
         <main className="mx-auto max-w-3xl ">
           <Outlet />
         </main>

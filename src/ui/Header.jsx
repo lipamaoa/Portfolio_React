@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const Links = [
-    { name: "About", link: "/" },
-    { name: "Projects", link: "/about" },
+    { name: "About", link: "/about" },
+    { name: "Projects", link: "/projects" },
     { name: "Contact", link: "/contact" },
   ];
 
@@ -12,11 +12,13 @@ function Header() {
 
   return (
     <div className="md:flex items-center justify-between bg-stone-200 py-4 md:px-10 px-3">
-      <div className="flex items-center gap-2">
-        <span className="bg-stone-100 text-stone-800 rounded border-2 border-black size-10 text-xl text-semibold  flex items-center justify-center">
-          FS
-        </span>
-        <p className="flex  ">Filipa Santos.</p>
+      <div>
+        <Link to="/" className="flex items-center gap-2">
+          <span className="bg-stone-100 text-stone-800 rounded border-2 border-black size-10 text-xl text-semibold  flex items-center justify-center">
+            FS
+          </span>
+          <p className="flex  ">Filipa Santos.</p>
+        </Link>
       </div>
 
       <div
