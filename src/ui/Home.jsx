@@ -3,8 +3,8 @@ import Photo from "../assets/photo.jpg";
 
 function Home() {
   return (
-    <section className="grid place-items-center md:grid-cols-6">
-      <div className="w-full pt-10 grid h-full items-center max-w-6xl justify-around gap-4 md:gap-2  md:col-span-2 text-center">
+    <section className="grid place-items-center md:grid-cols-4">
+      <div className="w-full pt-10 px-3 grid h-full items-center max-w-6xl justify-around gap-4 md:gap-2  md:col-span-2 text-center">
         <h5 className="font-medium text-stone-100 "> Hello Welcome</h5>
         <h1 className="text-xl"> Hi!{"I'm Filipa"}</h1>
         <h1 className="text-xl">Full stack developer</h1>
@@ -13,30 +13,30 @@ function Home() {
           included a PhD in Chemistry and a senior role in the pharmaceutical
           industry, to explore a new path in web development.
         </h2>
-        <div className="flex justify-center md:justify-end gap-3 text-2xl py-10">
-          <Link to="" className="social-icon">
-            <i className="fa-brands fa-github"></i>
+        <div className="flex justify-center gap-3 text-2xl py-10">
+          <Link to="">
+            <button className=" font-semibold text-sm  md:w-full p-2 bg-white rounded-2xl hover:bg-slate-200   ">
+              {" "}
+              <i className="fa-solid fa-download p-1"></i>Download CV
+            </button>
           </Link>
           <Link to="" className="social-icon">
-            <i className="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-github hover:opacity-50"></i>
           </Link>
           <Link to="" className="social-icon">
-            <i className="fa-solid fa-tag"></i>
+            <i className="fa-brands fa-linkedin hover:opacity-50"></i>
+          </Link>
+          <Link to="" className="social-icon">
+            <i className="fa-solid fa-tag hover:opacity-50"></i>
           </Link>
         </div>
       </div>
-      <div className=" md:col-span-3">
+      <div className=" md:col-span-2 py-4">
         <img
           src={Photo}
-          className="w-2/3 mx-auto w-100 max-w-80  mt-5 rounded-full"
+          className="w-3/4 mx-auto  max-w-80  mt-5 rounded-full"
           alt="hello"
         />
-      </div>
-      <div>
-        <button className="font-semibold text-sm  p-1 border-solid border-dotted border-black ">
-          {" "}
-          <i className="fa-solid fa-download p-1"></i>Download CV
-        </button>
       </div>
     </section>
     // <section className=" flex items-center relative before:absolute before:top-0 before:start-1/2  before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
