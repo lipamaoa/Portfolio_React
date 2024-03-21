@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <div className="grid col-auto gap-4 p-10">
+    <section className="grid col-auto gap-4  md:max-w-6xl mx-auto" id="aboutMe">
       <div>
         <h1 className="text-2xl text-center font-semibold uppercase ">
           About Me
@@ -33,7 +33,7 @@ function AboutMe() {
         <i className="fa-brands fa-node-js"></i>
         <i className="fa-brands fa-sass"></i>
       </div>
-    </div>
+    </section>
   );
 }
 

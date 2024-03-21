@@ -3,19 +3,22 @@ import Photo from "../assets/photo.jpg";
 
 function Home() {
   return (
-    <section className="grid place-items-center md:grid-cols-4">
-      <div className="w-full pt-10 px-3 grid h-full items-center max-w-6xl justify-around gap-4 md:gap-2  md:col-span-2 text-center">
-        <h5 className="font-medium text-stone-100 "> Hello Welcome</h5>
+    <section
+      className=" min-h-screen  container  grid place-items-center relative mx-auto border-2 border-stone-500 md:max-w-6xl md:px-0 md:grid-cols-2 w-full  justify-around "
+      id="home"
+    >
+      <div className="grid  items-center text-center gap-4 px-5">
+        <h5 className="font-medium text-stone-400 "> Hello Welcome</h5>
         <h1 className="text-xl"> Hi!{"I'm Filipa"}</h1>
         <h1 className="text-xl">Full stack developer</h1>
-        <h2 className="text-sm">
+        <h2 className="text-sm text-justify ">
           I am a passionate professional who recently paused my career, which
           included a PhD in Chemistry and a senior role in the pharmaceutical
           industry, to explore a new path in web development.
         </h2>
-        <div className="flex justify-center gap-3 text-2xl py-10">
+        <div className="flex justify-center gap-3 text-2xl  ">
           <Link to="">
-            <button className=" font-semibold text-sm  md:w-full p-2 bg-white rounded-2xl hover:bg-slate-200   ">
+            <button className=" font-semibold text-sm  md:w-full  bg-white rounded-2xl hover:bg-slate-200   ">
               {" "}
               <i className="fa-solid fa-download p-1"></i>Download CV
             </button>
@@ -31,10 +34,10 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div className=" md:col-span-2 py-4">
+      <div className="  ">
         <img
           src={Photo}
-          className="w-3/4 mx-auto  max-w-80  mt-5 rounded-full"
+          className="w-1/2 mx-auto  max-w-xs  rounded-full"
           alt="hello"
         />
       </div>
